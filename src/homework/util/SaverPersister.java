@@ -1,5 +1,6 @@
 package homework.util;
 
+import homework.models.Persister;
 import homework.util.impl.SaveToConsole;
 
 public class SaverPersister implements SaveToConsole {

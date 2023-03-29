@@ -1,14 +1,12 @@
 package homework;
-
-import homework.util.Persister;
-import homework.util.SaverPersister;
+import homework.controller.UserSaverPersistance;
+import homework.models.User;
 
 public class Main {
     public static void main(String[] args) {
         User user = new User("Jon");
-        Persister persister = new Persister(user); // копия юзер
-        SaverPersister saver = new SaverPersister(persister); // инициализация класса для сохранения
-        saver.saveToConsole();
+        UserSaverPersistance userSaver = new UserSaverPersistance(user);
+        userSaver.Save();
         user.report();
     }
 }

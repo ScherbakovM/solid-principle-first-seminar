@@ -1,6 +1,6 @@
-package homework;
+package homework.models;
 
-import homework.report.Reportable;
+import homework.view.report.Reportable;
 
 public class User implements Reportable {
     private final String name;

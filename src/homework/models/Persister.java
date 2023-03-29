@@ -1,6 +1,4 @@
-package homework.util;
-
-import homework.User;
+package homework.models;
 
 public class Persister {
     private  final  String name;
@@ -15,4 +13,10 @@ public class Persister {
         return name;
     }
 
+    @Override
+    public String toString() {
+        return "Persister{" +
+                "user=" + user +
+                '}';
+    }
 }
