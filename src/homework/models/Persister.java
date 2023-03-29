@@ -1,7 +1,7 @@
 package homework.models;
 
 public class Persister {
-    private  final  String name;
+    private final String name;
     private final User user;
 
     public Persister(User user) {
@@ -15,8 +15,6 @@ public class Persister {
 
     @Override
     public String toString() {
-        return "Persister{" +
-                "user=" + user +
-                '}';
+        return "Persister{" + "user=" + user + '}';
     }
 }

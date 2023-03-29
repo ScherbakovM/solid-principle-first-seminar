@@ -1,8 +1,6 @@
 package homework.models;
 
-import homework.view.report.Reportable;
-
-public class User implements Reportable {
+public class User {
     private final String name;
 
     public User(String name) {
@@ -11,11 +9,6 @@ public class User implements Reportable {
 
     public String getName() {
         return name;
-    }
-
-    @Override
-    public void report() {
-        System.out.println("Report for user: " + name);
     }
 
 }
